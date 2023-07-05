@@ -1,6 +1,38 @@
+# 🤑 SAFU Perks
+
+> Protect yourself, get rewarded.
+
+SAFU Perks rewards crypto explorers that have earned Verifiable Credentials (VCs) related to learning web3 security.
+
+1. Earn your VC through a security or education issuer
+2. Unlock the associated role on SAFU Perks
+3. ???
+4. PROFIT!
+
+## Instructions
+
+This dApp depends on a “POKAntiPhishing” VC that can be issued using [the demo issuer](https://issuer-demo.polygonid.me/):
+
+1. Click `Create Claims`
+2. Select `Custom` for the Schema
+3. Enter `https://raw.githubusercontent.com/d0wnlore/urban-spork/d0wnlore_idThon/credential-schema/pok-anti-phishing.json` for the Url
+4. Enter `POKAntiPhishing` for the Type
+5. Leave Expiration as it is
+6. Enter the following for the Data JSON, modifying the `numQuizPassed` value to test different states in the dApp
+
+```
+{
+    "numQuizPassed": 2
+}
+```
+
+The idea is that this VC would be issued from a security or education platform that tests the user for their competence of anti-phishing strategies. The issuer would then issue a Proof of Knowledge (POK) VC for anti-phishing knowledge.
+
+The VC only has one value, indicating if the user has passed any anti-phishing quizes, and how many if a number of them were taken at time of issuance.
+
 # This is a template for creating your own VC Gated Dapp
 
-This template spins up a dapp that is 
+This template spins up a dapp that is
 
 -   ✅ Built with the popular [React JS](https://react.dev/) library
 -   ✅ VC Gated with a [Polygon ID KYCAgeCredential](https://oceans404.notion.site/How-to-get-a-KYCAgeCredential-Verifiable-Credential-f3d34e7c98ec4147b6b2fae79066c4f6?pvs=4)
@@ -16,7 +48,7 @@ Love or hate something about this template? Let me know by [tweeting your feedba
 
 Node requirement: **node v20.2.0**
 
-Here's how to check your node version. 
+Here's how to check your node version.
 
 ```bash
 node -v
