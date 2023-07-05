@@ -11,6 +11,8 @@ SAFU Perks rewards crypto explorers that have earned Verifiable Credentials (VCs
 
 ## Instructions
 
+This dApp is not hosted anywhere, so this needs to be ran locally with the existing boilerplate instructions at the end of this README. Make sure that the verifier is publicly accessible using Ngrok or Serveo.
+
 This dApp depends on a “POKAntiPhishing” VC that can be issued using [the demo issuer](https://issuer-demo.polygonid.me/):
 
 1. Click `Create Claims`
