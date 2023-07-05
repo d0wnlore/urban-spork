@@ -1,19 +1,19 @@
-const { ProofOfDaoLongevity	} = require("./vcHelpers/ProofOfDaoLongevity");
+const { POKAntiPhishing	} = require("./vcHelpers/POKAntiPhishing");
 
 // design your own customised authentication requirement here using Query Language
 // https://0xpolygonid.github.io/tutorials/verifier/verification-library/zk-query-language/
 
-const humanReadableAuthReason = "Must be in DAO before this dadte";
+const humanReadableAuthReason = "Must have passed at least one anti-phishing quiz";
 
 const credentialSubject = {
-  entryDate: {
-    // users must be born before this year
-    // birthday is less than Jan 1, 2023
-    $lt: 20230101,
+  numQuizPassed: {
+    // users must have passed at least
+    // one anti-phishing quiz
+    $gt: 0,
   },
 };
 
-const proofRequest = ProofOfDaoLongevity(credentialSubject);
+const proofRequest = POKAntiPhishing(credentialSubject);
 
 module.exports = {
   humanReadableAuthReason,

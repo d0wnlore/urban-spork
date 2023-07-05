@@ -1,7 +1,7 @@
 module.exports = {
   // VC type: POKAntiPhishing
   // https://raw.githubusercontent.com/d0wnlore/urban-spork/d0wnlore_idThon/credential-schema/pok-anti-phishing.jsonld
-  ProofOfDaoLongevity	: (credentialSubject) => ({
+  POKAntiPhishing	: (credentialSubject) => ({
     id: 1,
     circuitId: "credentialAtomicQuerySigV2",
     query: {
