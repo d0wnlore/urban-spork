@@ -7,10 +7,10 @@ import { Center, Card, Image, CardBody, Container } from "@chakra-ui/react";
 function App() {
   // if you're developing and just want to see the dapp without going through the Polygon ID flow,
   // temporarily set this to "true" to ignore the Polygon ID check and go straight to the dapp page
-  const [provedAccessBirthday, setProvedAccessBirthday] = useState(false);
+  const [provedPassedQuiz, setProvedPassedQuiz] = useState(false);
   return (
     <>
-      {provedAccessBirthday ? (
+      {provedPassedQuiz ? (
         <VcGatedDapp />
       ) : (
         <Center className="vc-check-page">
@@ -41,7 +41,7 @@ function App() {
                   issuerOrHowToLink={
                     "https://oceans404.notion.site/How-to-get-a-Verifiable-Credential-f3d34e7c98ec4147b6b2fae79066c4f6?pvs=4"
                   }
-                  onVerificationResult={setProvedAccessBirthday}
+                  onVerificationResult={setProvedPassedQuiz}
                 />
                 <Image
                   src="https://bafybeibcgo5anycve5flw6pcz5esiqkvrzlmwdr37wcqu33u63olskqkze.ipfs.nftstorage.link/"
