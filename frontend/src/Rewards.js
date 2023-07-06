@@ -1,7 +1,6 @@
 import {
   Box,
   Container,
-  Center,
   Image,
   Text,
   SimpleGrid
@@ -9,7 +8,7 @@ import {
 import DiscordLogo from "./discord-logo.svg";
 import ZengoLogo from "./zengo-logo.svg";
 
-function VcGatedDapp() {
+function Rewards() {
   return (
     <Container mt="8" mb="4">
       <SimpleGrid columns={2} spacing={10}>
@@ -26,4 +25,4 @@ function VcGatedDapp() {
   );
 }
 
-export default VcGatedDapp;
+export default Rewards;

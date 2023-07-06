@@ -1,7 +1,7 @@
 import "./App.css";
 import { useState } from "react";
 import PolygonIDVerifier from "./PolygonIDVerifier";
-import VcGatedDapp from "./VcGatedDapp";
+import Rewards from "./Rewards";
 import { SimpleGrid, Fade, Flex, Box, Card, Stack, StackDivider, Heading, CardHeader,CardBody, Container, Text } from "@chakra-ui/react";
 
 function App() {
@@ -30,12 +30,12 @@ bgClip='text'>Protect Yourself, Unlock Rewards</Heading>
                   <Text fontSize="xl">
                     Prove that you have successfully passed at least one anti-phishing quiz to unlock these rewards…
                   </Text>
-                  <VcGatedDapp />
+                  <Rewards />
                 </Box>
                 <Box>
                   {provedPassedQuiz ? (
                     <Fade in={provedPassedQuiz}>
-                      <Text align="center" mb="4"><Text as="b">For taking your web3 security seriously, you have unlocked the following rewards…</Text></Text>
+                      <Text align="center" mb="4"><Text as="b">You have earned the following rewards through your Proof of Knowledge of Anti-Phishing…</Text></Text>
                       <Text align="center">Discord Nitro (3-Months): <Text as="kbd">N0T4N-4CTU4L-PR0M0-C0D3</Text></Text>
                       <Text align="center">Zengo Pro(6-Months): <Text as="kbd">N0T4N-4CTU4L-PR0M0-C0D3</Text></Text>
                     </Fade>
