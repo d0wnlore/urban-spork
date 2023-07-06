@@ -108,17 +108,19 @@ function PolygonIDVerifier({
   return (
     <div>
       {sessionId ? (
-        <Button colorScheme="purple" onClick={onOpen} margin={4}>
-          Prove access rights
-        </Button>
+        <Center>
+          <Button colorScheme="purple" borderRadius="99px" textColor="#fff" bgGradient="linear-gradient(#8a46ff,#6e38cc)" onClick={onOpen} margin={4} size='lg'>
+            Prove Your Knowledge of Anti-Phishing
+          </Button>
+        </Center>
       ) : (
         <Spinner />
       )}
 
       {qrCodeData && (
         <Modal isOpen={isOpen} onClose={onClose} isCentered>
-          <ModalOverlay />
-          <ModalContent>
+          <ModalOverlay backdropFilter="blur(5px)" />
+          <ModalContent backgroundColor="white" textColor="black">
             <ModalHeader>
               Scan this QR code from your{" "}
               <a
