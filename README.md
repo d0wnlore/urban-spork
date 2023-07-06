@@ -1,8 +1,8 @@
 # 🤑 SAFU Perks
 
-> Protect yourself, get rewarded.
+> Protect Yourself, Unlock Rewards
 
-SAFU Perks rewards crypto explorers that have earned Verifiable Credentials (VCs) related to learning web3 security.
+SAFU Perks rewards crypto explorers that have earned Verifiable Credentials (VCs) related to knowledge of web3 security concepts.
 
 1. Earn your VC through a security or education issuer
 2. Unlock the associated role on SAFU Perks
@@ -11,7 +11,7 @@ SAFU Perks rewards crypto explorers that have earned Verifiable Credentials (VCs
 
 ## Instructions
 
-This dApp is not hosted anywhere, so this needs to be ran locally with the existing boilerplate instructions at the end of this README. Make sure that the verifier is publicly accessible using Ngrok or Serveo.
+This dApp is not hosted anywhere, so this needs to be ran locally or deployed with the existing boilerplate instructions at the end of this README. Make sure that the verifier server is publicly accessible using Ngrok or Serveo if deployed locally (or just set the appropriate state flag to `true` in `App.js` to test the unlocked state).
 
 This dApp depends on a “POKAntiPhishing” VC that can be issued using [the demo issuer](https://issuer-demo.polygonid.me/):
 
