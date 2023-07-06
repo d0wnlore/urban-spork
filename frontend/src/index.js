@@ -1,14 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { ChakraProvider } from "@chakra-ui/react";
+import { extendTheme, ChakraProvider } from "@chakra-ui/react";
 import "./index.css";
 import App from "./App";
+
+// 3. extend the theme
+const theme = extendTheme({
+  initialColorMode: 'dark',
+  useSystemColorMode: false,
+})
 
 require("dotenv").config();
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <ChakraProvider>
+  <ChakraProvider theme={theme}>
     <App />
   </ChakraProvider>
 );

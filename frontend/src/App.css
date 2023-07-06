@@ -1,8 +1,8 @@
 .vc-check-page {
   display: flex;
   flex-direction: column;
-  text-align: center;
   min-height: 100vh;
+  background: #000 url("../public/urban-spork-bg.jpg") no-repeat left bottom / contain;
 }
 
 #vc-gated-dapp a {

@@ -1,26 +1,28 @@
 import {
   Box,
   Container,
-  Flex,
-  Heading,
-  Button,
-  Spinner,
-  Card,
   Center,
-  VStack,
+  Image,
+  Text,
+  SimpleGrid
 } from "@chakra-ui/react";
+import DiscordLogo from "./discord-logo.svg";
+import ZengoLogo from "./zengo-logo.svg";
 
 function VcGatedDapp() {
   return (
-    <div id="vc-gated-dapp">
-      <Box background="black" color="white" py={4}>
-        <Container maxW={"80%"}>
-          <Flex justifyContent="space-between">
-            <Heading>My VC Gated Dapp</Heading>
-          </Flex>
-        </Container>
-      </Box>
-    </div>
+    <Container mt="8" mb="4">
+      <SimpleGrid columns={2} spacing={10}>
+        <Box>
+          <Image src={DiscordLogo} m="0 auto" />
+          <Text align="center" mt="2"><Text as="b">3-Months of Nitro</Text></Text>
+        </Box>
+        <Box>
+          <Image src={ZengoLogo}  m="0 auto" />
+          <Text align="center" mt="2"><Text as="b">6-Months of Pro</Text></Text>
+        </Box>
+      </SimpleGrid>
+    </Container>
   );
 }
 
